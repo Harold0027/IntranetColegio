@@ -1,0 +1,715 @@
+{
+	"info": {
+		"_postman_id": "32770faa-0600-4279-8761-9b3f51cbb8ea",
+		"name": "INTRANET-COLEGIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28554518"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"Juan\",\r\n  \"contraseña\": \"123456\",\r\n  \"rol\": \"admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/session/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"session",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"harold\",\r\n  \"contraseña\": \"123456\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/session/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"session",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/session/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"session",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"Bianca\",\r\n  \"contraseña\": \"123456\",\r\n  \"rol\": \"admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": \"Bianquis\",\r\n  \"contraseña\": \"nuevaPassword123\",\r\n  \"rol\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/user/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DOCENTES",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/docente/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"docente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET DOCENTE BY ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/docente/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"docente",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Docente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Ana Maria\",\r\n  \"apellido\": \"Gomez\",\r\n  \"edad\": 30,\r\n  \"telefono\": \"912345678\",\r\n  \"salario\": 3200.00,\r\n  \"activo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/docente/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"docente",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear docente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Ana\",\r\n  \"apellido\": \"Gomez\",\r\n  \"edad\": 29,\r\n  \"telefono\": \"912345678\",\r\n  \"salario\": 3000.00,\r\n  \"activo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/docente/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"docente",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete docente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Ana\",\r\n  \"apellido\": \"Gomez\",\r\n  \"edad\": 29,\r\n  \"telefono\": \"912345678\",\r\n  \"salario\": 3000.00,\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/docente/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"docente",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET alumnos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Ana\",\r\n  \"apellido\": \"Gomez\",\r\n  \"edad\": 29,\r\n  \"telefono\": \"912345678\",\r\n  \"salario\": 3000.00,\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/alumno/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"alumno",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET alumno ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Ana\",\r\n  \"apellido\": \"Gomez\",\r\n  \"edad\": 29,\r\n  \"telefono\": \"912345678\",\r\n  \"salario\": 3000.00,\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/alumno/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"alumno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear alumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Ana\",\r\n  \"apellido\": \"Perez\",\r\n  \"edad\": 15,\r\n  \"telefono\": \"987654321\",\r\n  \"activo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/alumno/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"alumno",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update alumno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana\",\r\n  \"apellido\": \"Perez\",\r\n  \"edad\": 15,\r\n  \"telefono\": \"987654321\",\r\n  \"activo\": true\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/alumno/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"alumno",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete alumno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana\",\r\n  \"apellido\": \"Perez\",\r\n  \"edad\": 15,\r\n  \"telefono\": \"987654321\",\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/alumno/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"alumno",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get NOTAS",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana\",\r\n  \"apellido\": \"Perez\",\r\n  \"edad\": 15,\r\n  \"telefono\": \"987654321\",\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/nota/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"nota",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET notas id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana\",\r\n  \"apellido\": \"Perez\",\r\n  \"edad\": 15,\r\n  \"telefono\": \"987654321\",\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/nota/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"nota",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear nota",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idAlumno\": 2,\r\n  \"nota\": 16\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/nota/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"nota",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete nota",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana\",\r\n  \"apellido\": \"Perez\",\r\n  \"edad\": 15,\r\n  \"telefono\": \"987654321\",\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/nota/1004",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"nota",
+						"1004"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get pagos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nombre\": \"Juana\",\r\n  \"apellido\": \"Perez\",\r\n  \"edad\": 15,\r\n  \"telefono\": \"987654321\",\r\n  \"activo\": true\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/pago/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pago",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get pago id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pago/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pago",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get pago alumno id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pago/alumno/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pago",
+						"alumno",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Crear pago",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"idAlumno\": 3,\r\n  \"monto\": 250.00,\r\n  \"fechaPago\": \"2025-10-03\",\r\n  \"estado\": \"Pendiente\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/pago/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pago",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete pago",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/pago/1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"pago",
+						"1002"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
