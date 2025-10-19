@@ -25,7 +25,7 @@ export class AlumnoSQLDao {
             .input('nombre', sql.VarChar(50), nombre)
             .input('apellido', sql.VarChar(50), apellido)
             .input('edad', sql.Int, edad)
-            .input('telefono', sql.VarChar(20), telefono)
+            .input('telefono', sql.Numeric, Number(telefono)) 
             .input('activo', sql.Bit, activo)
             .query('INSERT INTO Alumnos(nombre, apellido, edad, telefono, activo) OUTPUT INSERTED.* VALUES (@nombre, @apellido, @edad, @telefono, @activo)');
         return new Alumno(result.recordset[0]);

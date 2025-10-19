@@ -20,7 +20,7 @@ export class SessionController {
             res.status(201).json({message:"Registro exitoso ", user});
         } catch (err) {
             res.status(400).json({ error: err.message });
-        }
+        } 
     }
 
     // Login
@@ -41,5 +41,12 @@ export class SessionController {
             if(err) return res.status(500).json({ error: "Error al cerrar sesión" });
             res.json({ message: "Logout exitoso" });
         });
+    }
+    async checkLogin(req, res) {
+    if (req.isAuthenticated()) {
+        res.json({ loggedIn: true, user: req.user });
+    } else {
+        res.json({ loggedIn: false });
+        }
     }
 }

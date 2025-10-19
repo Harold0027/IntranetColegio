@@ -2,17 +2,12 @@ FrontendIntranetColegio/
 ├── public/
 ├── src/
 │   ├── assets/
-│   │   ├── images/
-│   │   │   └── colegio.jpg
-│   │   └── icons/
-│   │       └── user.svg
 │   ├── components/
 │   │   ├── UI/
-│   │   │   ├── Button.jsx
-│   │   │   ├── Input.jsx
-│   │   │   ├── Modal.jsx
-│   │   │   └── Table.jsx
-│   │   └── forms/
+│   │   │   ├── ButtonDelete.jsx
+│   │   │   ├── ButtonEdit.jsx
+│   │   │   └── ButtonRegister.jsx
+│   │   └── forms/(vistas editar)
 │   │       ├── LoginForm.jsx
 │   │       ├── UserForm.jsx
 │   │       ├── DocenteForm.jsx
@@ -31,6 +26,7 @@ FrontendIntranetColegio/
 │   │   ├── docentes/
 │   │   │   ├── components/
 │   │   │   │   └── DocenteList.jsx
+│   │   │   │   └── DocenteListContainer.jsx
 │   │   │   ├── services/
 │   │   │   │   └── docente.api.js
 │   │   │   └── pages/
@@ -38,6 +34,7 @@ FrontendIntranetColegio/
 │   │   ├── alumnos/
 │   │   │   ├── components/
 │   │   │   │   └── AlumnoList.jsx
+│   │   │   │   └── AlumnoListContainer.jsx
 │   │   │   ├── services/
 │   │   │   │   └── alumno.api.js
 │   │   │   └── pages/
@@ -45,6 +42,7 @@ FrontendIntranetColegio/
 │   │   ├── notas/
 │   │   │   ├── components/
 │   │   │   │   └── NotaList.jsx
+│   │   │   │   └── NotaListContainer.jsx
 │   │   │   ├── services/
 │   │   │   │   └── nota.api.js
 │   │   │   └── pages/
@@ -52,6 +50,7 @@ FrontendIntranetColegio/
 │   │   ├── pagos/
 │   │   │   ├── components/
 │   │   │   │   └── PagoList.jsx
+│   │   │   │   └── PagoListContainer.jsx
 │   │   │   ├── services/
 │   │   │   │   └── pago.api.js
 │   │   │   └── pages/
@@ -59,6 +58,7 @@ FrontendIntranetColegio/
 │   │   └── reportes/
 │   │       ├── components/
 │   │       │   └── ReporteCard.jsx
+│   │       │   └── ReporteCardContainer.jsx
 │   │       └── pages/
 │   │           └── ReportesPage.jsx
 │   ├── layouts/

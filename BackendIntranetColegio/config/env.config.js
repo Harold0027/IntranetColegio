@@ -4,7 +4,7 @@ dotenv.config();
 
 const env = {
     PORT: parseInt(process.env.PORT || '3000', 10),
-    DB_SERVER: process.env.DB_SERVER || 'localhost',
+    DB_SERVER: process.env.DB_SERVER || 'localhost\MSSQLSERVER05',
     DB_NAME: process.env.DB_NAME || 'IntranetColegio',
     DB_PORT: process.env.DB_PORT || '1433',
     DB_USER: process.env.DB_USER,

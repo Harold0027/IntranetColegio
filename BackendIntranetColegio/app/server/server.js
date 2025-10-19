@@ -1,14 +1,17 @@
 import express from "express";
 import session from "express-session";
 import passport from "../../config/auth/passport.config.js";
+import { SQLConnection } from "../../config/db/connection.js"
+import env from "../../config/env.config.js"
+import cors from "cors";
+
+
 import usersRouter from "../routes/users.router.js";
 import sessionsRouter from "../routes/session.router.js";
 import docentesRouter from "../routes/docentes.router.js";
 import alumnosRouter from "../routes/alumnos.router.js";
 import notasRouter from "../routes/notas.router.js";
 import pagosRouter from "../routes/pagos.router.js";
-import env from "../../config/env.config.js"
-import { SQLConnection } from "../../config/db/connection.js"
 
 const app = express();
 const PORT = env.PORT || 3000;
@@ -20,6 +23,11 @@ app.use(express.urlencoded({extended:true}));
 export const StartServer = async ()=>{
     //conexion DB
     await SQLConnection();
+
+    app.use(cors({
+        origin: "http://localhost:5173", 
+        credentials: true, 
+    }));
 
     //configuracion de sesiones
     app.use(session({
