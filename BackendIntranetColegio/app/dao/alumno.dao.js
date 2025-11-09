@@ -25,10 +25,10 @@ export class AlumnoSQLDao {
             .input('nombre', sql.VarChar(50), nombre)
             .input('apellido', sql.VarChar(50), apellido)
             .input('edad', sql.Int, edad)
-            .input('telefono', sql.VarChar(20), telefono)
+            .input('telefono', sql.Numeric, Number(telefono)) 
             .input('activo', sql.Bit, activo)
             .query('INSERT INTO Alumnos(nombre, apellido, edad, telefono, activo) OUTPUT INSERTED.* VALUES (@nombre, @apellido, @edad, @telefono, @activo)');
-        return new Alumno(result.recordset[0]);
+        return new Alumno(result.recordset[0]); 
     }
 
     async update(idAlumno, { nombre, apellido, edad, telefono, activo }) {
@@ -38,7 +38,7 @@ export class AlumnoSQLDao {
             .input('nombre', sql.VarChar(50), nombre)
             .input('apellido', sql.VarChar(50), apellido)
             .input('edad', sql.Int, edad)
-            .input('telefono', sql.VarChar(20), telefono)
+            .input('telefono', sql.Numeric, Number(telefono))
             .input('activo', sql.Bit, activo)
             .query(`UPDATE Alumnos 
                     SET nombre=@nombre, apellido=@apellido, edad=@edad, telefono=@telefono, activo=@activo
@@ -46,7 +46,7 @@ export class AlumnoSQLDao {
                     WHERE idAlumno=@id`);
         if(result.recordset.length === 0) return null;
         return new Alumno(result.recordset[0]);
-    }
+    } 
 
     async delete(idAlumno) {
         const pool = await SQLConnection();

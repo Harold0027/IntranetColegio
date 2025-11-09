@@ -25,7 +25,7 @@ export class UserSQLDao{
             .input('contraseña', sql.VarChar(255), contraseña)
             .input('rol', sql.VarChar(20), rol)
             .query('INSERT INTO Usuarios(usuario,contraseña,rol) OUTPUT INSERTED.* VALUES (@usuario, @contraseña, @rol)');
-        return new Usuario(result.recordset[0]);
+        return new Usuario(result.recordset[0]); 
     }
     
         async update(idUsuario, {usuario, contraseña, rol}) {

@@ -8,6 +8,7 @@ const controller = new SessionController();
 
 router.post('/register', controller.register.bind(controller));
 router.post('/login', controller.login.bind(controller));
-router.post('/logout', requireSession, controller.logout.bind(controller));
+router.post('/logout', requireSession, controller.logout.bind(controller)); 
+router.get('/check', controller.checkLogin.bind(controller)); 
 
-export default router;
+export default router; 

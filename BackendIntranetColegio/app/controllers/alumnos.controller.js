@@ -29,7 +29,7 @@ export class AlumnosController {
             res.status(500).json({ error: "Error al obtener alumno" });
         }
     }
-
+ 
     async create(req, res) {
         try {
             const { nombre, apellido, edad, telefono, activo } = req.body;

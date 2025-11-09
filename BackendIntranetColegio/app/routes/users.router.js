@@ -11,4 +11,4 @@ router.post('/', requireSession, requireRole('admin'), controller.create.bind(co
 router.put('/:id', requireSession, requireRole('admin'), controller.update.bind(controller));
 router.delete('/:id', requireSession, requireRole('admin'), controller.delete.bind(controller));
 
-export default router; 
+export default router;  

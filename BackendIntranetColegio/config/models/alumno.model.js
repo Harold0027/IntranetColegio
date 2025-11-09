@@ -8,6 +8,6 @@ class Alumno {
     this.telefono = telefono;
     this.activo = activo;
   }
-}
+} 
 
 export default Alumno;

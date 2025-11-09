@@ -4,7 +4,7 @@ import { AlumnosController } from "../controllers/alumnos.controller.js";
 import { requireSession, requireRole } from "../../middleware/auth.middleware.js";
 
 const router = Router();
-const controller = new AlumnosController();
+const controller = new AlumnosController(); 
 
 router.get("/", requireSession, requireRole("user"), controller.getAll.bind(controller));
 router.get("/:id", requireSession, requireRole("user"), controller.getById.bind(controller));
